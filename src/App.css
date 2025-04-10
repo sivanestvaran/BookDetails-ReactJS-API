@@ -1,53 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Black+Han+Sans&family=Handlee&family=Happy+Monkey&display=swap');
-.main{
-    background-color: #FAFAFA;
-    min-height: 100vh;
-    width: 100%;
-    /* padding: 20px; */
-    display: flex;
-    flex-direction: column;
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Black+Han+Sans&family=Handlee&family=Happy+Monkey&family=Mali&display=swap");
+.main {
+  height: 100%; /* Use height here, not min-height */
+  width: 100%;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
 }
 
-.content{
-    background-color: #FFFFFF;
-    flex: 1;
-    border-radius: 30px ;
-    padding: 0 !important;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    position: relative;
+.content {
+  background-color: #ffffff;
+  flex: 1;
+  border-radius: 30px;
+  padding: 0 !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+  overflow: auto;
 }
 
-.header-section{
-    background-color: #102E50;
-    border-radius: 30px 30px 0px 0px;
+.header-section {
+  background-color: #102e50;
+  border-radius: 30px 30px 0px 0px;
 }
 
-.header-title{
-    font-family: "Black Han Sans", sans-serif;
-    color: #F5C45E;
+.header-title {
+  font-family: "Black Han Sans", sans-serif;
+  color: #f5c45e;
 }
-.header-body{
-    color: #F5C45E;
-    font-family: "Amita", serif;
-    line-height: 2;
-    width:400px
-}
-
-.header-body  .header-body-centent > p{
-    width: 500px;
+.header-body {
+  color: #f5c45e;
+  font-family: "Amita", serif;
+  line-height: 2;
+  width: 400px;
 }
 
-input{
-     font-family: "Handlee", cursive !important;
-     font-weight: 600 !important;
+.header-body .header-body-centent > p {
+  width: 500px;
 }
 
-.footer-section{
-    background-color: #102E50;
-    border-radius: 0px 0px 30px 30px;
-    position: absolute;
+input {
+  font-family: "Handlee", cursive !important;
+  font-weight: 600 !important;
+}
+
+.footer-section {
+  background-color: #102e50;
+  border-radius: 0px 0px 30px 30px;
+  /* position: absolute;
     bottom:0;
-    left: 0;
-    width:100%;
-    z-index: 0;
+    left: 0; */
+  width: 100%;
+  z-index: 0;
 }
+
+.card-body > p {
+  font-family: "Mali", cursive;
+  font-size: 14px;
+}
+
+.bookShelves {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 500px;
+}
+
+.footer-section > p {
+  font-family: "Mali", cursive;
+}
+
+/* Customize scrollbar
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+ 
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  } */

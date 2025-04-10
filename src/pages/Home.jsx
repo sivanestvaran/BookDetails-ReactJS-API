@@ -1,40 +1,12 @@
-import Content from "../components/Content";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Main from "../components/Main";
+import BookLayout from "../components/BookLayout";
+import Bookshelf from "../components/Bookshelf"
 
-const Home = () => {
+const Home = ({ allBooks }) => {
+
     return (
-        <Main>
-            <Content>
-               <Header/>
-               <div className="mb-5" style={{height:'600px' , overflowY:'auto'}}>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               <h1>Hwllo</h1>
-               </div>
-               
-               <Footer/>
-            </Content>
-        </Main>
+        <BookLayout allBooks={allBooks}>
+            <Bookshelf allBooks={allBooks} />
+        </BookLayout>
     )
 }
 

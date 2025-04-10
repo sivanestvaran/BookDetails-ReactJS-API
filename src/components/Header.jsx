@@ -21,11 +21,11 @@ const Header = () => {
 
                     </div>
                     <div className="header-search">
-                        <div class="d-flex justify-content-center">
+                        <div className="d-flex justify-content-center">
                             <div className="col-5">
-                            <input type="text" class="form-control rounded-0 rounded-start-2 border-0" placeholder='Search for books...'/>
+                                <input type="text" className="form-control rounded-0 rounded-start-2 border-0" placeholder='Search for books...' />
                             </div>
-                            <button class="btn border-0 rounded-0 rounded-end-2 bg-white"><img src={searchIcon} className='p-0' height='20px' alt="" /></button>
+                            <button className="btn border-0 rounded-0 rounded-end-2 bg-white"><img src={searchIcon} className='p-0' height='20px' alt="" /></button>
                         </div>
                     </div>
                 </div>
