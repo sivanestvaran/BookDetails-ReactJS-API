@@ -4,11 +4,11 @@ import Content from './Content'
 import Header from './Header'
 import Footer from './Footer'
 
-const BookLayout = ({ children }) => {
+const BookLayout = ({ children,apiData }) => {
     return (
         <Main>
             <Content>
-                <Header />
+                <Header apiData={apiData} />
                 {children}
                 <Footer />
             </Content>

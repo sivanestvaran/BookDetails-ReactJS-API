@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import manReading from '../assets/man-reading.png'
 import searchIcon from '../assets/search.png'
 
-const Header = () => {
+const Header = ({apiData}) => {
+
+    // console.log('dataf:'+dataf)
+
+    const inputRef = useRef();
+
+    function clickHandler(){
+        apiData(inputRef.current.value)
+        inputRef.current.value="";
+    }
+
     return (
         <div className='header-section'>
             <div className='header-container d-flex flex-column flex-md-row'>
@@ -22,10 +32,10 @@ const Header = () => {
                     </div>
                     <div className="header-search">
                         <div className="d-flex justify-content-center">
-                            <div className="col-5">
-                                <input type="text" className="form-control rounded-0 rounded-start-2 border-0" placeholder='Search for books...' />
+                            <div className="col-10 col-md-5 ">
+                                <input type="text" ref={inputRef} className="form-control rounded-0 rounded-start-2 border-0" placeholder='Search for books...' />
                             </div>
-                            <button className="btn border-0 rounded-0 rounded-end-2 bg-white"><img src={searchIcon} className='p-0' height='20px' alt="" /></button>
+                            <button onClick={clickHandler} className=" input-btn btn border-0 rounded-0 rounded-end-2 bg-white"><img src={searchIcon} className='p-0' height='20px' alt="" /></button>
                         </div>
                     </div>
                 </div>

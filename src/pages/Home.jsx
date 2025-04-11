@@ -1,11 +1,11 @@
 import BookLayout from "../components/BookLayout";
 import Bookshelf from "../components/Bookshelf"
 
-const Home = ({ allBooks }) => {
+const Home = ({ allBooks,apiData }) => {
 
     return (
-        <BookLayout allBooks={allBooks}>
-            <Bookshelf allBooks={allBooks} />
+        <BookLayout allBooks={allBooks} apiData={apiData}>
+            {allBooks && <Bookshelf allBooks={allBooks} />}
         </BookLayout>
     )
 }
